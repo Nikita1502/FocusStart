@@ -21,10 +21,11 @@ window.onload = function() {
         searchList.innerHTML = '';
 
         allLinks.forEach(function (item) {
-            if (item.innerText.toUpperCase().search(word.toUpperCase()) != -1) {
+            if ((search.value !== '')&&(search.value !== ' ')&&(item.innerText.toUpperCase().search(word.toUpperCase()) != -1)) {
                 links.push(item);
             }
         })
+ 
         found.innerHTML = 'найдено ' + links.length;
 
         links.forEach(function (item) {

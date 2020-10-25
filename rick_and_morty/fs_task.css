@@ -1,8 +1,9 @@
 .fs-task {
-    height: auto;
-    min-height: 37px;
+    height: 200px;
+    /*min-height: 37px;*/
+    overflow-y: scroll;
     width: auto;
-    min-width: 200px;
+    min-width: 625px;
     background-color: #fff;
     color: #0b0080;
     border: 2px black solid;
