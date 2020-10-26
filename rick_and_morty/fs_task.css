@@ -11,9 +11,12 @@
     position: absolute;
     z-index: 1;
 }
-#inputSearch {
+#searchDiv {
+    position: sticky;
+    top: 0;
     margin-top: 10px;
     margin-left: 10px;
+    background: white;
 }
 #found {
     margin-left: 5px;

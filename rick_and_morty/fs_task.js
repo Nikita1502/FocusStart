@@ -1,13 +1,17 @@
 window.onload = function() {
     let fsTask = document.querySelector('.fs-task');
 
+    let searchDiv = document.createElement('div');
+    searchDiv.setAttribute('id','searchDiv');
+    fsTask.appendChild(searchDiv);
+
     let search = document.createElement('input');
     search.setAttribute('id','inputSearch');
-    fsTask.appendChild(search);
+    searchDiv.appendChild(search);
 
     let found = document.createElement('span');
     found.setAttribute('id','found');
-    fsTask.appendChild(found);
+    searchDiv.appendChild(found);
 
     let searchList = document.createElement('ul');
     searchList.setAttribute('id','searchList');
@@ -25,7 +29,7 @@ window.onload = function() {
                 links.push(item);
             }
         })
- 
+
         found.innerHTML = 'найдено ' + links.length;
 
         links.forEach(function (item) {
